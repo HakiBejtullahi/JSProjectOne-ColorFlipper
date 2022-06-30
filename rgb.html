@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Roboto:ital,wght@0,100;0,400;0,700;0,900;1,100;1,400;1,700;1,900&display=swap');
+    </style>
+    <!-- link css -->
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <!-- nav -->
+    <nav>
+      <nav class="nav-center">
+        <h2 class="title">Color Flipper</h2>
+        <ul class="navBar">
+          <li>
+            <a href="index.html" class="navLink" id="navLink">Simple</a>
+          </li>
+          <li>
+            <a href="hex.html" class="navLink" id="navLink">HEX</a>
+          </li>
+          <li>
+            <a href="rgb.html" class="navLink" id="navLink">RGB</a>
+          </li>
+          <li>
+            <a href="hsl.html" class="navLink" id="navLink">HSL</a>
+          </li>
+        </ul>
+      </nav>
+    </nav>
+    <!-- Container -->
+    <main class="main" id="main">
+      <div class="container">
+        <h2 class="textColor">
+          background color: <span id="color" class="color">RGB</span>
+        </h2>
+        <button class="btn" id="btn">Get Color</button>
+      </div>
+    </main>
+    <script src="./js/rgb.js"></script>
+  </body>
+</html>
