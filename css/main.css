@@ -11,7 +11,7 @@
   --clr-grey-8: hsl(210, 31%, 80%);
   --clr-grey-9: hsl(213, 32%, 89%);
   --clr-grey-10: hsl(210, 36%, 96%);
-  --primaryBlack: rgb(40, 40, 40);
+  --primaryBlack: rgb(36, 36, 36);
   --primaryClr-1: #bb2525;
   --primaryClr-2: #a82121;
   --primaryClr-3: #831a1a;
@@ -94,7 +94,7 @@ p {
 /* navBar */
 
 nav {
-  background: var(--primaryClr-3);
+  background: var(--primaryBlack);
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -111,7 +111,7 @@ nav {
 }
 .nav-center .title {
   margin: 0.5rem 0;
-  color: var(--primaryWhite);
+  color: var(--primaryClr-3);
   text-transform: uppercase;
   cursor: pointer;
   user-select: none;
@@ -123,25 +123,27 @@ nav {
   width: 100%;
 }
 .navLink {
-  color: var(--primaryWhite);
+  color: var(--primaryClr-3);
   font-size: 2rem;
   font-weight: 700;
   margin-right: 3rem;
-  background-color: var(--primaryClr-5);
+  background-color: var(--primaryBlack);
   padding: 0.25rem 0.5rem;
-  border: 3px solid var(--clr-grey-4);
+  border: 3px solid var(--primaryClr-3);
   transition: var(--transition);
   display: flex;
   justify-content: center;
   align-items: center;
   min-width: 150px;
+  margin-bottom: 10px;
 }
 
 .navLink:hover {
   color: var(--primaryClr-2);
+  box-shadow: 0 0px 25px var(--primaryClr-1);
   letter-spacing: var(--spacing);
   background-color: var(--clr-grey-4);
-  box-shadow: var(--shadowDark);
+  border-color: var(--primaryClr-1);
 }
 @media (max-width: 1400px) {
   .nav-center {
@@ -188,14 +190,14 @@ nav {
   margin: 1rem 2rem;
 }
 .btn {
-  color: var(--clr-grey-3);
-  background: var(--primaryClr-3);
+  color: var(--primaryClr-3);
+  background: var(--primaryBlack);
   font-size: 2rem;
   font-family: var(--ff-Primary);
   font-weight: 900;
   text-transform: uppercase;
   padding: 0.875rem 2rem;
-  border: 4px solid var(--clr-grey-3);
+  border: 4px solid var(--primaryClr-3);
   letter-spacing: var(--spacing);
   border-radius: var(--radius);
   transition: var(--transition);
@@ -203,7 +205,8 @@ nav {
   justify-self: center;
 }
 .btn:hover {
-  color: var(--clr-grey-1);
-  border-color: var(--clr-grey-1);
-  background-color: var(--primaryClr-1);
+  color: var(--primaryClr-1);
+  border-color: var(--primaryClr-1);
+  background-color: var(--clr-grey-4);
+  box-shadow: 0 0 15px var(--primaryClr-1);
 }
