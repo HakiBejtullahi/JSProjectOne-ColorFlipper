@@ -108,6 +108,7 @@ nav {
   grid-template-columns: auto 1fr;
   place-items: center;
   grid-template-rows: 60px;
+  text-align: center;
 }
 .nav-center .title {
   margin: 0.5rem 0;
@@ -153,12 +154,19 @@ nav {
 }
 @media (max-width: 838px) {
   .navBar {
-    grid-template-columns: auto;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
     justify-items: center;
   }
   .navLink {
     margin: 0;
     margin-bottom: 10px;
+  }
+}
+@media (max-width: 488px) {
+  .navBar {
+    grid-template-columns: auto;
+    grid-template-rows: repeat(4, 1fr);
   }
 }
 /* main */
