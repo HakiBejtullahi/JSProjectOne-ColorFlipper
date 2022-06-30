@@ -151,7 +151,7 @@ nav {
     grid-template-rows: auto auto;
   }
 }
-@media (max-width: 630px) {
+@media (max-width: 838px) {
   .navBar {
     grid-template-columns: auto;
     justify-items: center;
